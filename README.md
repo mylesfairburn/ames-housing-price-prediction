@@ -4,7 +4,7 @@ A regression model for Kaggle's *House Prices: Advanced Regression Techniques*, 
 
 **Result:** 326 / ~3,200 — top ~10% · 5-fold CV RMSE ≈ 0.110 (log scale)
 
-![CV RMSE by modelling step](progression.png)
+![CV RMSE by modelling step](assets/progression.png)
 
 ## Problem
 Predict `SalePrice` for each home. Submissions are scored on RMSE between the *logarithm* of the predicted and actual price, so a proportional error on a cheap house counts the same as on an expensive one.
