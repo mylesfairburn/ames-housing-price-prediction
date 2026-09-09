@@ -4,7 +4,7 @@ A regression model for Kaggle's *House Prices: Advanced Regression Techniques*, 
 
 **Result:** 326 / ~3,200 — top ~10% · 5-fold CV RMSE ≈ 0.110 (log scale)
 
-![CV RMSE by modelling step](assets/progression.png)
+![CV RMSE by modelling step](progression.png)
 
 ## Problem
 Predict `SalePrice` for each home. Submissions are scored on RMSE between the *logarithm* of the predicted and actual price, so a proportional error on a cheap house counts the same as on an expensive one.
@@ -20,7 +20,7 @@ Predict `SalePrice` for each home. Submissions are scored on RMSE between the *l
 ## Repo contents
 - `ames-housing-price-prediction.ipynb` — the full analysis
 - `requirements.txt` — dependencies
-- `assets/progression.png` — the results chart above
+- `progression.png` — the results chart above
 
 ## Data
 The competition CSVs are **not** included — Kaggle competition data shouldn't be redistributed. Download them from the [competition data page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data), or via the Kaggle CLI:
@@ -29,7 +29,7 @@ The competition CSVs are **not** included — Kaggle competition data shouldn't 
 kaggle competitions download -c house-prices-advanced-regression-techniques
 ```
 
-Unzip `train.csv` and `test.csv` into a `data/` folder and point the notebook's read paths there.
+Place `train.csv` and `test.csv` in the repository root (they're gitignored, so they won't be committed). The notebook reads them from there.
 
 ## Running it
 ```bash
